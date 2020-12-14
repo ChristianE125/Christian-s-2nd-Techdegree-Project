@@ -1,3 +1,8 @@
+* {
+    font-family: 'Quicksand';
+    box-sizing: border-box;
+}
+
 body {
     margin: 0px;
     padding: 0;
@@ -12,6 +17,7 @@ header {
 footer {
     background-color:#f8f8f8;
     padding: 1em;
+    padding-bottom: 3em;
 }
 h2 {
     text-transform: uppercase;
@@ -24,8 +30,13 @@ h2 {
     display: block;
     text-transform: uppercase;
     font-weight: bold;
+    padding-left: 0%;
+    margin-left: 0%;
+    text-align: center;
+}
 
-    
+p {
+   color: rgb(42, 42, 49);
 }
 .main-nav li {
     list-style: none;
@@ -34,14 +45,9 @@ h2 {
     padding: 1em;
 
 }
-.main-nav  {
-    padding-left: 0%;
-    margin-left: 0%;
-    text-align: center;
-}
 
 .portfolio {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 img {
     max-width: 100%;
@@ -49,7 +55,6 @@ img {
     margin-bottom: 1em;
 }
 a {
-    color: black;
     text-decoration: none;
 }
 
@@ -57,6 +62,38 @@ a {
     margin: 1em;
 }
 
+.wider-nav {
+    display: none;
+
+}
+
+.bottom-name {
+    float: left;
+}
+
+.back-to-top {
+    float: right;
+    text-transform: uppercase;
+}
+
+hr {
+    margin-top: 4em;
+    margin-bottom: 1.5em;
+}
+
+.small-text,
+.small-text a {
+    color: #252525;
+    text-transform: uppercase;
+    font-size: small;
+    
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
 
 
 
@@ -95,6 +132,45 @@ a {
 
 
 
-@media (min-width:768px) {
 
+
+@media (min-width: 768px) {
+    .back-to-top {
+        display: none;
+    }
+
+    .wider-nav {
+        display: inline;
+        float: right;
+    }
+
+    .wider-nav li {
+        float: left;
+    }
+
+    .bottom-name {
+        
+    }
+
+    .main-nav {
+        margin-bottom: 2em;
+    }
+
+    .main-nav li {
+        background-color:#f8f8f8;
+        display: inline;
+    }
+
+    .profile {
+        float: right;
+    }
+
+    .profile-p {
+        padding-top: 15%;
+    }
+
+    .port {
+        float: right;
+        width: 45%;
+    }
 }

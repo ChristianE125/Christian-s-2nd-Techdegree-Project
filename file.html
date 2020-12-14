@@ -2,25 +2,26 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="css/file.css"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Project 2 - Christian Espinosa</title>
     </head>
     <body>
-        <header>
-            <h1>Christian Espinosa</h1>
+        <header class="clearfix">
+            <h1 id="top">Christian Espinosa</h1>
             
                 <ul class="main-nav">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#contact">Contact</a></li>
+                  <li class="small-text"><a href="#top">Home</a></li>
+                  <li class="small-text"><a href="#portfolio">Portfolio</a></li>
+                  <li class="small-text"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <img src="images/responsive-layout-profile.png" alt="Self Portrait" class="profile">
-            <p>Hi! I'm a 10th grader in the Oakland BayArea. Im new to this coding stuff and already finished one project. Coding is both exiting and challenging! </p>
+            <p class="profile-p">Hi! I'm a 10th grader in the Oakland BayArea. Im new to this coding stuff and already finished one project. Coding is both exiting and challenging! </p>
         </header>
-        <div class="portfolio" id="portfolio">
-            <h2>Portfolio</h2>
+        <div class="portfolio clearfix" id="portfolio">
+            <h2 class="small-text">Portfolio</h2>
                 <!--img 1-->
                 <div class="port">
                     <img src="images/portfolio-1.png" alt="marketing page">
@@ -60,11 +61,20 @@
         </div>
         <footer>
             <div class="contact" id="contact">
-                <h3>Contact</h3>
+                <h3 class="small-text">Contact</h3>
                 <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-                <p>Phone +1 (510) 993-9142</p>
-                <p>Email 2023cespinosa@arisehighschool.org</p>
+                <p><strong>Phone</strong>   +1 (510) 993-9142</p>
+                <p><strong>Email</strong>   2023cespinosa@arisehighschool.org</p>
             </div>
-        </footer>
+            <hr> 
+                <span class="bottom-name">Christian Espinosa</span> <span class="back-to-top"><a href="#top">Back to Top</a></span>
+                <nav class="wider-nav">
+                    <ul>
+                        <li class="small-text"><a href="#top">Home</a></li>
+                        <li class="small-text"><a href="#portfolio">Portfolio</a></li>
+                        <li class="small-text"><a href="#contact">Contact</a></li>
+                   </ul>
+                </nav>
+            </footer>
     </body>
 </html>
