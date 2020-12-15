@@ -48,6 +48,7 @@ p {
 
 .portfolio {
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 img {
     max-width: 100%;
@@ -56,6 +57,9 @@ img {
 }
 a {
     text-decoration: none;
+    color: #252525;
+    text-transform: uppercase;
+    font-size: small;
 }
 
 .port {
@@ -64,7 +68,12 @@ a {
 
 .wider-nav {
     display: none;
+    
+}
 
+.small-text {
+    text-transform: uppercase;
+    font-size: small;
 }
 
 .bottom-name {
@@ -81,57 +90,11 @@ hr {
     margin-bottom: 1.5em;
 }
 
-.small-text,
-.small-text a {
-    color: #252525;
-    text-transform: uppercase;
-    font-size: small;
-    
-}
-
 .clearfix::after {
     content: '';
     display: table;
     clear: both;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media (min-width: 768px) {
@@ -146,12 +109,14 @@ hr {
 
     .wider-nav li {
         float: left;
+        list-style-type: none;
+        margin-left: 15px;
+        margin-right: 5px;
     }
-
-    .bottom-name {
-        
+    
+    .wider-nav ul {
+        margin: 0;
     }
-
     .main-nav {
         margin-bottom: 2em;
     }
@@ -163,14 +128,36 @@ hr {
 
     .profile {
         float: right;
+        width: 40%;
     }
 
     .profile-p {
-        padding-top: 15%;
+        padding-top: 10%;
     }
 
     .port {
         float: right;
         width: 45%;
     }
+
+}
+
+@media (min-width: 1024px) {
+
+    .port {
+        width: 30%;
+    }
+
+    .top-name {
+        float: left;
+        display: inline;
+    }
+
+    .main-nav {
+        float: right;
+        display: inline;
+    }
+
+
+
 }
