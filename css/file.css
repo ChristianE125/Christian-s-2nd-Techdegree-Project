@@ -96,6 +96,10 @@ hr {
     clear: both;
 }
 
+.top-name {
+    font-size: 140%;
+}
+
 
 @media (min-width: 768px) {
     .back-to-top {
@@ -151,11 +155,12 @@ hr {
     .top-name {
         float: left;
         display: inline;
+        margin: 0;
+        line-height: 1.5;
     }
 
     .main-nav {
         float: right;
-        display: inline;
     }
 
 
